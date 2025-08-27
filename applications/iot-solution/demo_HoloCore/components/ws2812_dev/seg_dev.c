@@ -11,8 +11,10 @@
 #include "seg_dev.h"
 #include "blog.h"
 #include <stdint.h>
+
 #define ON true
 #define OFF false
+
 // 数码管显示温度定义
 typedef struct
 {
@@ -62,17 +64,17 @@ typedef struct
  */
 static seg_dev_t seg_dev = {
 	.tempAndHumidity = {
-		.tens = {0, 1, 2, 3, 4, 5, 6},
-		.units = {7, 8, 9, 10, 11, 12, 13},
+		.tens = {2, 3, 6, 5, 0, 1, 4},
+		.units = {9, 10, 13, 12, 7, 8, 11},
 		.t_unit_id = 15,
 		.h_unit_id = 14,
 	},
 	.seg_time = {
-		.seg_hour_tens = {17, 18, 19, 20, 21, 22, 23},
-		.seg_hour_units = {24, 25, 26, 27, 28, 29, 30},
+		.seg_hour_tens = {19, 20, 23, 22, 17, 18, 21},
+		.seg_hour_units = {26, 27, 30, 29, 24, 25, 28},
 		.seg_units = 31,
-		.seg_minute_tens = {32, 33, 34, 35, 36, 37, 38},
-		.seg_minute_units = {39, 40, 41, 42, 43, 44, 45},
+		.seg_minute_tens = {34, 35, 38, 37, 32, 33, 36},
+		.seg_minute_units = {41, 42, 45, 44, 39, 40, 43},
 	},
 };
 // 数码管显示颜色定义

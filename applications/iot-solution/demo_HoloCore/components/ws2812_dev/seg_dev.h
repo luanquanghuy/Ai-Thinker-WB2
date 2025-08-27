@@ -11,7 +11,7 @@
 #ifndef SEG_DEV_H
 #define SEG_DEV_H
 #include <stdint.h>
-#include "ir_ws2812.h"
+#include "ws2812.h"
 #include "stdbool.h"
 
 typedef enum
